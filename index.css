@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  --var: hsla(0, 0%, 21%, 1);
+  background-color: var(--var);
+  user-select: none;
+}
+.logo {
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between; /* Align items to the edges */
+  padding: 1.5em;
+  background-color: hsla(0, 0%, 13%, 1);
+  position: relative; /* For positioning mobileMenu button */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin-right: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.mobileMenu {
+  display: none; /* Hidden by default */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0;
+    padding: 1.5em;
+  }
+
+  .nav-links {
+    display: flex;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 0.5em;
+  }
+
+  .nav-mobile {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+  }
+
+  .nav-mobile.show {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .image {
+    position: relative;
+    bottom: 3.5em;
+    left: 7em;
+  }
+
+  .mobileMenu {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 10px;
+    padding: 0.5em;
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    background: rgb(71, 70, 70);
+    border: none;
+  }
+}
