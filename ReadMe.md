@@ -1,6 +1,3 @@
-Here's a sample `README.md` file for your responsive navbar project:
-
-```markdown
 # Responsive Navbar
 
 This project demonstrates a responsive navigation bar created using HTML, CSS, and JavaScript. The navbar is designed to adapt to different screen sizes, providing an optimal user experience on both desktop and mobile devices.
@@ -17,26 +14,14 @@ This project demonstrates a responsive navigation bar created using HTML, CSS, a
 - **CSS**: Stylesheet language for designing the navigation bar.
 - **JavaScript**: Programming language for adding interactive functionality.
 
-## Project Structure
-```
-
-responsive-navbar/
-│
-├── index.html
-├── index.css
-├── index.js
-└── images/
-├── Hamburger Menu (1).png
-└── Hamburger Menu (AI style) copy.png
-
-````
-
 ## Setup and Usage
 
 1. **Clone the repository**:
 
    ```bash
    git clone https://github.com/your-username/responsive-navbar.git
+   ```
+
 ````
 
 2. **Navigate to the project directory**:
@@ -71,14 +56,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - Font: [Verdana, Geneva, Tahoma, sans-serif]
-- Icons: [Font Awesome](https://fontawesome.com/)
-- Images: Icons and images used in this project.
+- Images: Icons and images used in this project from PixCap.
 
 ## Contact
 
 For any questions or feedback, please contact [your-email@example.com].
 
 ```
-
-Replace `https://github.com/your-username/responsive-navbar.git` with the actual URL of your repository, and `[your-email@example.com]` with your actual email address. Adjust any other details as necessary to fit your project.
-```
+````
